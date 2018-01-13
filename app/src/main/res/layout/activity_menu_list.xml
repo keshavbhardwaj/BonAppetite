@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_rel_card_view"
+    tools:context="bhardwaj.keshav.bonappetite.MenuList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <Button
+                android:id="@+id/CancelItemSelection"
+                android:text=" Cancel / Back "
+                android:shadowColor="#bc000000"
+                android:shadowDx="2.5"
+                android:shadowDy="2.3"
+                android:shadowRadius="0.9"
+                android:textAllCaps="false"
+                android:textSize="17dp"
+
+                android:textColor="#FFFFFF"
+                android:background="@drawable/cancelbutton"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"/>
+            <Button
+                android:id="@+id/ProceedOrder"
+                android:text="Place Order"
+                android:shadowColor="#bc000000"
+                android:shadowDx="2.5"
+                android:shadowDy="2.3"
+                android:shadowRadius="0.9"
+                android:textAllCaps="false"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="17dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/savebutton"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#005e8b"
+                android:textAllCaps="true"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerMenuList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

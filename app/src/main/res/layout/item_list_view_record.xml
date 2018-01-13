@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/SingleCardRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/list_rel_card_view">
+
+        <TextView
+            android:id="@+id/MenuItemNameForCust"
+            android:text="Keshav"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:textColor="#292929"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/MenuItemCountForCust"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:textSize="20dp"
+            android:textColor="#292929"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Rs. "
+            android:textSize="17dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#292929"
+            android:layout_below="@+id/MenuItemNameForCust"
+            android:id="@+id/Rs"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="35"
+            android:textSize="17dp"
+            android:layout_below="@+id/MenuItemNameForCust"
+            android:layout_toRightOf="@+id/Rs"
+            android:textColor="#292929"
+            android:id="@+id/MenuItemCostCust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true">
+
+
+                <Button
+                    android:id="@+id/decrementCount"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textSize="20dp"
+                    android:background="@drawable/inc_dec_count_box"/>
+
+                <TextView
+                    android:id="@+id/MenuItemCountCust"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:textSize="23dp"
+                    android:textColor="#292929"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/blackborder"/>
+
+                <Button
+                    android:id="@+id/incrementCount"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="+"
+                    android:textSize="20dp"
+                    android:background="@drawable/inc_dec_count_box"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

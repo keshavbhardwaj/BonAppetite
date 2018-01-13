@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bhardwaj.keshav.bonappetite.CustomerSide">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="118dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#2e414141"
+            android:shadowColor="#000000"
+            android:shadowDx="2.5"
+            android:shadowDy="2.3"
+            android:shadowRadius="5.9"
+            android:text="Bon Appetite"
+            android:textAllCaps="false"
+            android:textColor="#f5f7f5"
+            android:textSize="35dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="invisible"/>
+        <ImageButton
+            android:id="@+id/PersonalDetails"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#00ffffff"
+            android:src="@drawable/ic_contacts_black_24dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:text="Personal Details" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Personal Info"/>
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/ScanQR"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible"
+            android:background="@drawable/scan_button_background"
+            android:src="@drawable/ic_scan_center_focus_black_24dp"
+            android:layout_margin="8dp"
+            />
+        <TextView
+            android:id="@+id/ScanQRtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible"
+            android:text="Scan Seat Code"
+            android:textColor="#cef16767"/>
+
+        <ImageButton
+            android:id="@+id/DownloadMenu"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:background="#00ffffff"
+            android:src="@drawable/ic_cloud_download_black_24dp"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:id="@+id/DownloadMenuText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:text="Download Menu"/>
+
+        <ImageButton
+            android:id="@+id/PlaceOrder"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:background="@drawable/place_order_background"
+            android:src="@drawable/ic_restaurant_black_24dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/PlaceOrderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:text="Place Order"
+            android:textColor="#ce67f16c"/>
+
+        <TextView
+            android:id="@+id/TextNameScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

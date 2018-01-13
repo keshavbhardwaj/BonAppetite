@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3efefef"
+    tools:context="bhardwaj.keshav.bonappetite.AddItemToMenu">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:stretchColumns="*">
+            <TableRow>
+                <Button
+                    android:id="@+id/CancelItemAddition"
+                    android:text=" Cancel / Back "
+                    android:shadowColor="#bc000000"
+                    android:shadowDx="2.5"
+                    android:shadowDy="2.3"
+                    android:shadowRadius="0.9"
+                    android:textAllCaps="false"
+                    android:textSize="17dp"
+
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/cancelbutton"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"/>
+
+                <Button
+                    android:id="@+id/PrepareItemAddition"
+                    android:text="Prepare"
+                    android:shadowColor="#bc000000"
+                    android:shadowDx="2.5"
+                    android:shadowDy="2.3"
+                    android:shadowRadius="0.9"
+                    android:textAllCaps="false"
+                    android:visibility="visible"
+                    android:textSize="17dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/savebutton"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"/>
+
+                <Button
+                    android:id="@+id/SaveItemAddition"
+                    android:text="Save"
+                    android:shadowColor="#bc000000"
+                    android:shadowDx="2.5"
+                    android:shadowDy="2.3"
+                    android:shadowRadius="0.9"
+                    android:textAllCaps="false"
+                    android:visibility="gone"
+                    android:textSize="17dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/savebutton"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"/>
+
+            </TableRow>
+
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:hint="Item Id"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:hint="Item Name"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/Charges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:hint="Item Charges (INR)"
+                android:inputType="numberDecimal"
+                android:textSize="15dp" />
+            <EditText
+                android:id="@+id/Temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:hint="Approx Temperature (Celsius)"
+                android:inputType="numberDecimal"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/IngredientListView">
+                <TextView
+                    android:id="@+id/AddIngredientText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Ingredients"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TableLayout
+                    android:id="@+id/AddedTable"
+                    android:layout_below="@+id/AddIngredientText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+
+                </TableLayout>
+                <LinearLayout
+                    android:layout_below="@+id/AddedTable"
+                    android:id="@+id/IngredientToFill"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/addingredientbox"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+                    <EditText
+                        android:id="@+id/IngredientNameText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:gravity="center"
+                        android:layout_weight="1.5"
+                        />
+                    <EditText
+                        android:id="@+id/IngredientQuantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Quantity"
+                        android:gravity="center"
+                        android:layout_weight="1.5"
+                        />
+                    <ImageButton
+                        android:id="@+id/AddIngredient"
+                        android:layout_weight="2"
+                        android:src="@android:drawable/ic_input_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/viewForeground"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@drawable/single_order_background_view">
+
+        <TextView
+            android:id="@+id/OrderItemName"
+            android:text="Keshav"
+            android:textColor="#131878"
+            android:textSize="23dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/CountText"
+            android:layout_below="@+id/OrderItemName"
+            android:text="Count: "
+            android:textColor="#131878"
+            android:textSize="19dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/OrderItemCount"
+            android:layout_below="@+id/OrderItemName"
+            android:layout_toRightOf="@+id/CountText"
+            android:text="2"
+            android:textColor="#131878"
+            android:textSize="19dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#2b3199"
+                android:text="Seat: "
+                android:textSize="18dp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/OrderSeatNo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#2b3199"
+                android:text="A16"
+                android:textSize="18dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_toLeftOf="@+id/TempIdRndmXX"
+                android:layout_marginTop="17dp"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                />
+            <TextView
+                android:id="@+id/TempIdRndmXX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swipe to Remove"
+                android:textColor="#37ffffff"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "430097036134",
+    "firebase_url": "https://bonappetite-54321.firebaseio.com",
+    "project_id": "bonappetite-54321",
+    "storage_bucket": "bonappetite-54321.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430097036134:android:ae534c4ba3456c4e",
+        "android_client_info": {
+          "package_name": "bhardwaj.keshav.bonappetite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430097036134-jkletr3h9lkqv3mo48feq3dsfrrp265b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bhardwaj.keshav.bonappetite",
+            "certificate_hash": "d4ddd14fbd0a56935b8886c983cb1ad2f8668cac"
+          }
+        },
+        {
+          "client_id": "430097036134-ot43f9ftls23hrh78ehkqslvaaan9njt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2rfxLi1mzY2nLN9uY1PpwT5w-T-X7Muo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430097036134-ot43f9ftls23hrh78ehkqslvaaan9njt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

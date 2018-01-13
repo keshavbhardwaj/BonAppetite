@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="bhardwaj.keshav.bonappetite.BusinessSide">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/business_side_add_item_but">
+        <RelativeLayout
+            android:id="@+id/Layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/T1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bon Appetite"
+                android:textColor="#f5f7f5"
+                android:textAllCaps="false"
+                android:shadowColor="#000000"
+                android:shadowDx="2.5"
+                android:shadowDy="2.3"
+                android:shadowRadius="5.9"
+                android:textSize="35dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_below="@+id/T1"
+                android:layout_marginLeft="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business Side"
+                android:textColor="#f5f7f5"
+                android:textAllCaps="false"
+                android:shadowColor="#000000"
+                android:shadowDx="2.5"
+                android:shadowDy="2.3"
+                android:shadowRadius="5.9"
+                android:textSize="35dp"
+                android:id="@+id/textView" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/Layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Layout1"
+            android:background="@drawable/but"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/PressMe"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="right"
+                android:background="@drawable/business_side_add_item_but"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textAllCaps="false"
+                android:layout_height="35dp"
+                android:text="Add Items"/>
+
+            <LinearLayout
+                android:id="@+id/Order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:paddingLeft="15dp"
+                android:paddingRight="8dp"
+                android:background="@drawable/currentoredersback">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    app:srcCompat="@android:drawable/presence_online" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Current Orders"
+                    android:textSize="20dp"
+                    android:textColor="#30940e"
+                    android:shadowColor="#ffffff"
+                    android:shadowDx="2.5"
+                    android:shadowDy="2.3"
+                    android:shadowRadius="5.9"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/NoOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="8dp"
+                android:layout_gravity="right"
+                android:background="@drawable/norderback">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@android:drawable/presence_busy" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="No Current Orders"
+                    android:textSize="20dp"
+                    android:textColor="#D6162D"
+                    android:shadowColor="#ffffff"
+                    android:shadowDx="2.5"
+                    android:shadowDy="2.3"
+                    android:shadowRadius="5.9"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/NoOrderImage"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_sentiment_satisfied_black_24dp"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/OrderRecyclerList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
